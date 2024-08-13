@@ -46,7 +46,7 @@ const z = 10;
 /**
  * Primitive data types are the most basic types of data in JavaScript.
  * They are immutable, meaning their values cannot be changed once created.
- * JavaScript has the following six primitive data types:
+ * JavaScript has the following primitive data types:
  */
 
 //? Number: Represents both integer and floating-point numbers
@@ -169,6 +169,17 @@ Note: null is often used to explicitly denote the lack of value.
 let sym = Symbol('unique');
 */
 
+//? BigInt (introduced in ES2020): BigInts are used to represent integers with arbitrary   precision. Like other primitive types, they are immutable.
+
+/*
+let bigNumber = 123456789012345678901234567890n;
+let anotherBigNumber = bigNumber + 1n;
+console.log(bigNumber); // Output: 123456789012345678901234567890n
+console.log(anotherBigNumber); // Output: 123456789012345678901234567891n
+
+Note: The original bigNumber remains unchanged after the operation.
+*/
+
 /*======================== Non-Primitive Data Types (Objects) ===========================*/
 
 /*
@@ -253,3 +264,37 @@ let text = "JavaScript";
 console.log(typeof text); // "string"
 
 */
+
+
+/**======================================================================================
+ *!            Why Avoid Certain Practices When Creating a JS File 
+ *======================================================================================**/
+
+ /*
+1-> Special Characters in File Names:
+    Reason: Special characters like @, #, &, *, etc., can cause compatibility issues across different operating systems, file systems, or development environments. They might have special meanings in some contexts (e.g., @ in URLs or emails), leading to unexpected behavior or errors when trying to access or reference the file.
+
+2-> Spaces in File Names:
+    Reason: Spaces in file names can cause issues when passing the file name as an argument in scripts or command-line interfaces. It can require additional handling, like quoting or escaping the spaces, which complicates usage. Dashes or underscores are clearer and safer.
+
+3-> Incorrect File Extensions:
+    Reason: Using anything other than .js as a file extension can lead to the file not being recognized as JavaScript by editors, compilers, or servers, causing it to be misinterpreted or ignored, leading to errors.
+ */
+
+/**======================================================================================
+ *!            Why Avoid Certain Practices When Naming Variables
+ *======================================================================================**/
+
+ /*
+1-> Reserved Keywords:
+    Reason: Words like let, class, and function are special in JavaScript. If you try to use them as variable names, it will cause errors because JavaScript won’t know if you mean the keyword or your variable.
+
+2-> Starting Variable Names with a Number:
+    Reason: You can’t start a variable name with a number in JavaScript. If you do, it will cause an error because JavaScript expects variable names to follow certain rules.
+
+3-> Special Characters (Except _ and $):
+    Reason: Special characters like @ or # are not allowed in variable names because they might cause errors or unexpected behavior. Only _ and $ are safe to use.
+
+4-> Non-Descriptive or Single-Letter Names:
+    Reason: If you use names that don’t explain what the variable does (like using just one letter), it makes your code harder to understand. This can lead to confusion, especially in bigger projects.
+ */
