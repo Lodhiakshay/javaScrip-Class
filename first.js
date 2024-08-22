@@ -50,10 +50,11 @@ let result5 = -Number.MAX_VALUE * 2
 // console.log(result5)
 
 
-let name = "Alice";
-let greeting = 'Hello, world!';
+// let name = "Alice";
+// let greeting = 'Hello, world!';
 
 
 let result = null;
 
 // console.log(result) // Debugging
+

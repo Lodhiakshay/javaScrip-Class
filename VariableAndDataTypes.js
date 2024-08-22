@@ -191,7 +191,7 @@ The key difference from primitive types is that they are stored by reference, no
 //? Object: Used to store collections of data or more complex entities.
 /*
 let user = {
-  name: "John",
+  name: "John",   // name -> key,  value -> "John"
   age: 30,
   isAdmin: true
 };
@@ -219,11 +219,12 @@ console.log(now); // Output: Current date and time
 
 //? RegExp: Short for "regular expression", it's used for pattern matching in strings.
 /*
-let regex = /hello/i; // Regular expression to match "hello" case-insensitively
-console.log(regex.test('Hello')); // Output: true
 
 Note: Commonly used for string searching and manipulation.
 */
+
+// let regex = /hello/i; // Regular expression to match "hello" case-insensitively
+// console.log(regex.test('Hello')); // Output: true
 
  /**======================================================================================
  *!            Key Differences Between Primitive and Non-Primitive Data Types
