@@ -1,6 +1,6 @@
-// String
+//++++++++++++++++++++++++++++++++++++++++ String ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-let str = 'Hello, World!';
+// let str = 'Hello, World!';
 
 // console.log(str.includes('World')); // true
 // console.log(str.includes('hgsg'));  // false
@@ -39,3 +39,27 @@ let str = 'Hello, World!';
 // console.log(message)
 
 // console.log(message.split(' '))
+
+// console.log(str.replace("World", "JavaScript"))
+
+// const language = "JavaScript"
+
+// const message = `${language} is a scripting language`
+
+// let str = 'The rain in Spain stays mainly in the plain.';
+// let result = str.match(/ain/g);
+// console.log(result);
+
+
+// const str = `Java script is very good language.\nSo I am "learning" JavaScript`
+
+// console.log(str);
+
+// console.log("apple" < "bat")
+
+
+
+String
+Array
+Number
+// function
