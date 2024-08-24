@@ -26,3 +26,10 @@
 
 // console.log(Math.log(8)/ Math.log(2)); 
 
+console.log(Math.max(1, 3, 2)); // 3  Returns the largest of the given numbers.
+
+console.log(Math.min(1, 3, 2)); // 1  Returns the largest of the given numbers.
+
+console.log(Math.pow(2, 3)); // 8  Returns the base to the exponent power (base^exponent).
+
+console.log(Math.cbrt(27)); // 3  Returns the cube root of a number.
