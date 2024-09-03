@@ -120,12 +120,12 @@
 
 //* Exits the current loop or switch statement immediately.
 
-// for (let i = 0; i < 10; i++) {
-//     if (i === 5) {
-//         break;
-//     }
-//     console.log(i);
-// }
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break;
+    }
+    console.log(i);
+}
 
 //? continue Statement
 
@@ -144,46 +144,46 @@
 
 //? Using Operators in a Calculator
 
-function calculator(a, b, operator) {
-  switch (operator) {
-    case "+":
-      return a + b;
-    case "-":
-      return a - b;
-    case "*":
-      return a * b;
-    case "/":
-      return a / b;
-    case "%":
-      return a % b;
-    default:
-      return "Invalid operator";
-  }
-}
+// function calculator(a, b, operator) {
+//   switch (operator) {
+//     case "+":
+//       return a + b;
+//     case "-":
+//       return a - b;
+//     case "*":
+//       return a * b;
+//     case "/":
+//       return a / b;
+//     case "%":
+//       return a % b;
+//     default:
+//       return "Invalid operator";
+//   }
+// }
 
-console.log(calculator(10, 5, "+")); // Output: 15
+// console.log(calculator(10, 5, "+")); // Output: 15
 
-//? Control Flow in a Login System
+// //? Control Flow in a Login System
 
-function login(username, password) {
-  const correctUsername = "admin";
-  const correctPassword = "password123";
+// function login(username, password) {
+//   const correctUsername = "admin";
+//   const correctPassword = "password123";
 
-  if (username === correctUsername && password === correctPassword) {
-    console.log("Login successful!");
-  } else {
-    console.log("Invalid username or password.");
-  }
-}
+//   if (username === correctUsername && password === correctPassword) {
+//     console.log("Login successful!");
+//   } else {
+//     console.log("Invalid username or password.");
+//   }
+// }
 
-login("admin", "password123"); // Output: Login successful!
+// login("admin", "password123"); // Output: Login successful!
 
 //? Looping Through an Array of Products
 
-let products = ["Laptop", "Phone", "Tablet", "Camera"];
-for (let i = 0; i < products.length; i++) {
-  console.log("Product: " + products[i]);
-}
+// let products = ["Laptop", "Phone", "Tablet", "Camera"];
+// for (let i = 0; i < products.length; i++) {
+//   console.log("Product: " + products[i]);
+// }
 // Output:
 // Product: Laptop
 // Product: Phone

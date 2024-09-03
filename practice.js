@@ -264,8 +264,7 @@
 //     console.log(`Today's special is Samosa`);
 //     break;
 //     default:
-//       console.log("Invalid Day");
-      
+//       console.log("Invalid Day");     
 // }
 
 
@@ -287,3 +286,123 @@
 // }
 
 // console.log(calculator(10, "/",  5)); 
+
+
+//================================================ Loop =========================================
+
+//? for Loop
+
+// * Executes a block of code a specified number of times.
+
+/*  Syntax
+
+  let i,
+
+  for(start, end, ++/--){
+    // code
+  }
+
+*/
+
+// for (let i = 10; i >= 1; i--) {
+//     console.log(i*2);
+// }
+
+// while Loop
+
+//* Executes a block of code as long as the condition is true.
+
+// let i = 10;
+// while (i < 5) {
+//     console.log(i);
+//     i++;
+// }
+
+//? do-while Loop
+
+// Executes a block of code once before checking the condition, then repeats as long as the condition is true.
+
+// let i = 0;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
+
+//? for...in Loop
+
+//* Iterates over the properties of an object.
+
+// let person = {name: "John", age: 30, city: "New York"};
+// for (let key in person) {
+//     console.log(key + ": " + person[key]);
+// }
+
+// let fruits = ["Apple", "Banana", "Mango"];
+
+// for (let index in fruits) {
+//     console.log(`${index} : ${fruits[index]}`);        // Logs the index (0, 1, 2)
+//     // console.log(fruits[index]); // Logs the value at that index (Apple, Banana, Mango)
+// }
+
+//? for...of Loop
+
+//* Iterates over the values of an iterable object like an array or string.
+
+// let arr = [10, 20, 30];
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+//? break Statement
+
+//* Exits the current loop or switch statement immediately.
+
+// for (let i = 0; i < 10; i++) {
+//     if (i === 5) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+//? continue Statement
+
+//*  Skips the current iteration of the loop and moves to the next one.
+
+// for (let i = 0; i < 10; i++) {
+//     if (i === 5) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+
+// function login(username, password) {
+//   const correctUsername = "admin";
+//   const correctPassword = "password123";
+
+//   if (username === correctUsername && password === correctPassword) {
+//     console.log("Login successful!");
+//   } else {
+//     console.log("Invalid username or password.");
+//   }
+// }
+
+// login("admin321", "password543123");  // function call
+
+
+//======================== TASK ===========================================
+// Print the table of any number 1 to 10
+
+// let s = 5;
+// for (let i = 1; i <= 10; i++) {
+//  console.log(i*s)
+
+// }
+
+// let b = 18;
+// for (let a = 1; a < b * 10 + 1; a++) {
+//   if (a % b == 0) {
+//     console.log(a);
+//   }
+// }
+
