@@ -213,66 +213,127 @@ It’s a list-like object that can store multiple values in a single variable.
 
 //? `slice()` method returns a shallow copy of a portion of an array into a new array object selected from `begin` to `end` (end not included). The original array will not be modified.
 
+// let fruits = ["Apple", "Banana", "Mango", "Pineapple"] 
+// let sliceFruits = fruits.slice(1)
+// console.log(sliceFruits);
 
 
 //? `splice()` method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
+// let fruits = ["Apple", "Banana", "Mango", "Pineapple"] 
 
+// fruits.splice(1, 0, "Orange")
+// console.log(fruits);
 
 //? `some()` method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
 
-
+// Todo
 
 //? `sort()` method sorts the elements of an array in place and returns the sorted array. The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code unit values.
 
+// let fruits = [ "Banana", "Mango", "Apple", "Pineapple"] 
+
+// fruits.sort()
+// console.log(fruits);
 
 //? `toSorted()` method creates a new array with the elements sorted in ascending order without modifying the original array.
 
-
+// Todo
 
 //? `toString()` method returns a string representing the specified array and its elements.
 
+// let fruits = [ "Banana", "Mango", "Apple", "Pineapple"]
+
+// console.log(fruits.toString());
 
 
 //? `toLocaleString()` method returns a string representing the elements of the array. The elements are converted to strings using their `toLocaleString` methods and these strings are separated by a locale-specific string (such as a comma “,”).
 
+// let numbers = [1234.453, 5674.675, 87347.74]       // 12,34,987,  ₹1,234.45,₹5,674.68,₹87,347.74
 
+// let localString = numbers.toLocaleString('en-IN', {style: 'currency', currency: 'INR'})
+
+// console.log(localString);
 
 //? `toReversed()` method creates a new array with the elements in the reverse order compared to the original array. The original array remains unchanged.
 
-
+// Todo
 
 //? `toSpliced()` method creates a new array by copying elements from the original array and applying the `splice()` operation on this new array. The original array remains unchanged.
 
-
+// Todo
 
 //? `values()` method returns a new array iterator object that contains the values for each index in the array.
+
+// let fruits = [ "Banana", "Mango", "Apple", "Pineapple"]
+
+// let values = fruits.values()
+
+// for(let value of values){
+//   console.log(value);
+  
+// }
 
 
 //? `with()` method creates a new array where an element at a specific index is replaced with a new value, without modifying the original array.
 
-
+// Todo
 
 
 //? `map()` method creates a new array populated with the results of calling a provided function on every element in the calling array.
 
+// const array1 = [1, 4, 9, 16];
+
+// Pass a function to map
+// const map1 = array1.map((x) => x * 2);
+
+// console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
 
 
 //? filter(): Creates a new array with all elements that pass the test implemented by the provided function.
 
+// let numbers = [1,2,3,4,5]
+
+// let result = numbers.filter(function(num){
+//   return num >3
+// })
+
+// let result = numbers.filter((num)=> num >3)
+
+// console.log(result);
 
 
 //? `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
 
+// let numbers = [1,2,3,4,5]
+// let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 5)
+
+// console.log(sum);
 
 
 //? `flat()` method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
+const arr1 = [0, 1, 2, [3, 4]];
 
+// console.log(arr1.length);
+// console.log(arr1);
+// console.log(arr1.flat());
+// expected output: Array [0, 1, 2, 3, 4]
 
-//? `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+const arr2 = [0, 1, [2, [3, [4, 5]]]];
 
+console.log(arr2.length);
 
+console.log(arr2.flat());
+// expected output: Array [0, 1, 2, Array [3, Array [4, 5]]]
+
+console.log(arr2.flat(2));
+// expected output: Array [0, 1, 2, 3, Array [4, 5]]
+
+console.log(arr2.flat(Infinity));
+// expected output: Array [0, 1, 2, 3, 4, 5]
 
 //? `flatMap()` method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a `map()` followed by a `flat()` of depth 1.
 
+// Todo
